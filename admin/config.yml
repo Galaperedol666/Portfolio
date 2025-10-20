@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: Galaperedol666/vinnichenko-furniture   # заміни на свій репозиторій
+  branch: main
+
+media_folder: "img/uploads"   # куди зберігати картинки
+public_folder: "/img/uploads"
+
+collections:
+  - name: "works"
+    label: "Роботи"
+    folder: "content/works"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Назва", name: "title", widget: "string" }
+      - { label: "Опис", name: "description", widget: "text" }
+      - { label: "Зображення", name: "image", widget: "image" }
