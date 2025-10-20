@@ -40,20 +40,19 @@
         <h5 class="mb-3">Місто: Дніпро</h5>
       </div>
       <div class="col-md-6">
-<form
-  action="https://formspree.io/f/mvgwnzgn"
-  method="POST"
->
-  <label>
-     Email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Повідомлення:
-    <textarea name="Повідомлення"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Відправити</button>
+<form action="https://formspree.io/f/mvgwnzgn" method="POST">
+  <div class="mb-3">
+    <label for="email" class="form-label">Email:</label>
+    <input id="email" type="email" name="email" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="message" class="form-label">Повідомлення:</label>
+    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+  </div>
+
+  <input type="hidden" name="_subject" value="Нове повідомлення з портфоліо">
+  <button type="submit" class="btn btn-primary">Відправити</button>
 </form>
       </div>
     </div>
