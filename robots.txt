@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /index.html
+
 
 Sitemap: https://vinnichenko-furniture.online/sitemap.xml
